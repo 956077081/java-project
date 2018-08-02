@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+	<display-name>PutHereTheNameOfYourWebApp</display-name>
+	<description>This a description of my web app made by Eclipse</description>
+    <filter>
+        <filter-name>PageFilter</filter-name>
+        <filter-class>com.dinner.filter.PageFilter</filter-class>
+        <init-param>
+            <param-name>encoder</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>PageFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.dinner.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>menu</servlet-name>
+    <servlet-class>com.dinner.servlet.menu</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>filterSevlet</servlet-name>
+    <servlet-class>com.dinner.filter.PageFilter</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CuisineServlet</servlet-name>
+    <servlet-class>com.dinner.servlet.CuisineServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MenutypeServlet</servlet-name>
+    <servlet-class>com.dinner.servlet.MenutypeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeskServlet</servlet-name>
+    <servlet-class>com.dinner.servlet.DeskServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>pageMenuServlet</servlet-name>
+    <servlet-class>com.dinner.servlet.pageMenuServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>formServlet</servlet-name>
+    <servlet-class>com.dinner.servlet.formServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>menu</servlet-name>
+    <url-pattern>/menu</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>filterSevlet</servlet-name>
+    <url-pattern>/filterSevlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CuisineServlet</servlet-name>
+    <url-pattern>/cuisine</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MenutypeServlet</servlet-name>
+    <url-pattern>/MenutypeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeskServlet</servlet-name>
+    <url-pattern>/DeskServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>pageMenuServlet</servlet-name>
+    <url-pattern>/pageMenuServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>formServlet</servlet-name>
+    <url-pattern>/formServlet</url-pattern>
+  </servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>/AJsp.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
